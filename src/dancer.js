@@ -26,7 +26,7 @@ var Dancer = class Dancer {
     this.$node.animate(styleSettings);
   }
 
-  lineup(index) {
+  lineUp(index) {
     this.setPosition(Math.floor((index * $('body').height()) / window.dancers.length), 0.25 * $('body').width());
   }
 

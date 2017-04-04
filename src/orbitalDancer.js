@@ -40,4 +40,10 @@ var OrbitalDancer = class OrbitalDancer extends Dancer {
   calcDist(node) {
     return Math.sqrt(Math.pow(this.left - node.left, 2) + Math.pow(this.top - node.top, 2));
   }
+
+  lineUp(index) {
+    super.lineUp(index);
+    this.topVelocity = 0;
+    this.leftVelocity = 0;
+  }
 };
