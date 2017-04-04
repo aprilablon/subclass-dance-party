@@ -5,54 +5,47 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/ee/66/d1/ee66d158a7e5105b870c0e1d504933de.jpg');
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
+  text-decoration: none;
 }
 .title, .addDancerButton, .lineup-button{
   padding:5px 12px;
   float:right;
 }
+
+.lineup-button {
+  background-color: #014f68;
+}
+
 .topbar{
   height:32px;
-  background-color: #555;
+  background-color: #120707;
 }
 
 .title{
-  background-color: #777;
+  background-color: #22365c;
 }
 
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
   position:absolute;
 }
 
-.dancer p {
-  display: none;
-}
-
 .dancer:hover {
-  border-radius: 0px;
+  z-index: -1;
 }
 
 .tipsy-dancer{
-  border:15px solid blue;
-  border-radius:15px;
 }
 
 .inflated-dancer {
-  border: 50px solid green;
-  border-radius: 50px;
 }
 
 .deflated-dancer {
-  border: 5px solid green;
-  border-radius: 5px;
 }
 
 .orbital-dancer {
-  border: 25px solid yellow;
-  border-radius: 25px;
 }

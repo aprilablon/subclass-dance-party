@@ -1,5 +1,6 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
+  this.$node.attr('src', 'http://icons.iconarchive.com/icons/harwen/weather/128/Sun-icon.png');
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function

@@ -4,8 +4,7 @@ var makeOrbitalDancer = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
-
-  this.$node.addClass('orbital-dancer');
+  this.$node.attr('src', 'http://pix.iemoji.com/twit33/0804.png');
 };
 
 makeOrbitalDancer.prototype = Object.create(makeDancer.prototype);

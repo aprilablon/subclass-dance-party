@@ -2,7 +2,7 @@ var makeTipsyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.apply(this, arguments);
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
-  this.$node.addClass('tipsy-dancer');
+  this.$node.attr('src', 'https://cdn.emojidex.com/emoji/px128/UFO.png?1417139067');
 };
 
 makeTipsyDancer.prototype = Object.create(makeDancer.prototype);
