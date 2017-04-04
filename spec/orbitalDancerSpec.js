@@ -6,9 +6,9 @@ describe('orbitalDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    orbitalDancer = new makeOrbitalDancer(10, 20, timeBetweenSteps);
+    orbitalDancer = new OrbitalDancer(10, 20, timeBetweenSteps);
     window.dancers.push(orbitalDancer);
-    orbitalDancer1 = new makeOrbitalDancer(20, 40, timeBetweenSteps);
+    orbitalDancer1 = new OrbitalDancer(20, 40, timeBetweenSteps);
     window.dancers.push(orbitalDancer1);
   });
 

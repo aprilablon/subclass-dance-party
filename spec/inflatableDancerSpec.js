@@ -5,7 +5,7 @@ describe('inflatableDancer', function() {
 
   beforeEach(function() {
     clock = sinon.useFakeTimers();
-    inflatableDancer = new makeInflatableDancer(10, 20, timeBetweenSteps);
+    inflatableDancer = new InflatableDancer(10, 20, timeBetweenSteps);
   });
 
   it('should have a jQuery $node object', function() {
