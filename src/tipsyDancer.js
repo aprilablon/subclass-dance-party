@@ -2,6 +2,7 @@ var TipsyDancer = class TipsyDancer extends Dancer {
   constructor (top, left, timeBetweenSteps) {
     super(top, left, timeBetweenSteps);
     this.$node.attr('src', 'https://cdn.emojidex.com/emoji/px128/UFO.png?1417139067');
+    this.$node.addClass('tipsy-dancer');
   }
 
   step() {

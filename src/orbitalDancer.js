@@ -7,6 +7,7 @@ var OrbitalDancer = class OrbitalDancer extends Dancer {
     this.top = top;
     this.left = left;
     this.$node.attr('src', 'http://pix.iemoji.com/twit33/0804.png');
+    this.$node.addClass('orbital-dancer');
   }
 
   step() {

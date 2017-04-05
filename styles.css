@@ -35,10 +35,10 @@ body, a:link, a:visited, a:active{
 }
 
 .dancer:hover {
-  z-index: -1;
 }
 
-.tipsy-dancer{
+.tipsy-dancer:hover{
+  -webkit-animation:spin 1s linear infinite;
 }
 
 .inflated-dancer {
@@ -47,5 +47,12 @@ body, a:link, a:visited, a:active{
 .deflated-dancer {
 }
 
-.orbital-dancer {
+.orbital-dancer:hover{
+  -webkit-animation:spin .5s linear infinite;
 }
+
+audio {
+  float: left;
+}
+
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
